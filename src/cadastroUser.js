@@ -40,7 +40,7 @@ function Cadastro() {
         professionalExperience: `${professionalExp}`
       }
 
-      axios.post('http://localhost:8082/users', json)
+      axios.post('http://ec2-52-206-14-246.compute-1.amazonaws.com:8082/users', json)
         .then(res => console.log(res))
         .catch(err => console.log(err))
 

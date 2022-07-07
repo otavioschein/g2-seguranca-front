@@ -11,7 +11,7 @@ function User() {
         setUser(u);
     }
 
-    axios.get(`http://localhost:8082/users/?name=${name}`)
+    axios.get(`http://ec2-52-206-14-246.compute-1.amazonaws.com:8082/users/?name=${name}`)
         .then(res => {
             handleUser(res.data);
         })
