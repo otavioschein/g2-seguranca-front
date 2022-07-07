@@ -9,7 +9,7 @@ export default class Users extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://ec2-52-206-14-246.compute-1.amazonaws.com:8082/users')
+    axios.get('http://ec2-54-84-179-193.compute-1.amazonaws.com:8082/users')
       .then(res => {
         console.log(res)
         this.setState({users: res.data});
